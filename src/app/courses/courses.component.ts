@@ -9,6 +9,7 @@ import { CoursesService } from 'app/courses.service';
 export class CoursesComponent {
   title = "List of courses";
   courses;
+  isActive = true;
 
   constructor(courseService: CoursesService) { 
     this.courses= courseService.getCourses();
