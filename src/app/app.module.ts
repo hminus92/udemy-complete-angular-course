@@ -2,19 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AuthorComponent } from './author/author.component';
-import { AuthorService } from './author.service';
+import { AuthorsComponent } from './authors/authors.component';
+import { AuthorsService } from './authors.service';
+import { CoursesComponent } from './courses/courses.component';
+import { CoursesService } from './courses.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthorComponent
+    AuthorsComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [
-    AuthorService
+    AuthorsService,
+    CoursesService
   ],
   bootstrap: [AppComponent]
 })
